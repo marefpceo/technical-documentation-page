@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Technical Documentation</title>
+</head>
+<body>
+  <main id='main-doc'>
+    <section class='main-section' id='Introduction'>
+      <header>Introduction</header>
+      <p>
+        HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure 
+        the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. 
+        HTML consists of a series of elements, which you use to enclose, wrap, or mark up different 
+        parts of content to make it appear or act in a certain way. The enclosing tags can make content 
+        into a hyperlink to connect to another page, italicize words, and so on. For example, consider 
+        the following line of text:
+      </p>
+      <span class='examples'><p>My cat is very grumpy</p></span>
+
+      <p>
+        If we wanted the text to stand by itself, we could simply specify that it is a paragraph by 
+        enclosing it in a paragraph element: <br>
+        <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+      </p>
+    </section>
+
+    <section class='main-section' id='Anatomy_of_an_HTML_Element'>
+      <header>Anatomy of an HTML Element</header>
+      <p>The anatomy of an element consists of an opening tag, the desired content, and a closing tag.</p>
+      <ul>
+        <li><strong>The opening tag:</strong>  This consists of the name of the element, wrapped in opening and closing angle brackets. (<code>&lt;p&gt;</code>)</li>
+        <li><strong>The content:</strong>  This is the content of the element.</li>
+        <li><strong>The closing tag:</strong>  This is the same as the opening tag, except that it includes a forward slash before the element name. (<code>&lt;/p&gt;</code>)</li>
+      </ul>
+    </section>
+
+    <section class='main-section' id='Attributes'>
+      <header>Attributes</header>
+      <p>Attributes contain extra information about the element that won't appear in the content. 
+        Using the previous example, a <strong>class</strong> attribute is added which is used to identify
+        a name for targetting the element with style information.<br>
+        <code>&lt;p class&equals;&quot;class-name&quot;&gt;My cat is very grumpy&lt;/p&gt;</code> 
+      </p>
+
+      <p>An attribute should have:</p>
+      <ul>
+        <li>A space between it and the element name.</li>
+        <li>The attribute name, followed by an equal sign.</li>
+        <li>An attribute value, wrapped with opening and closing quote marks.</li>
+      </ul>
+    </section>
+
+    <section class='main-section' id='Anatomy_of_an_HTML _Document'>
+      <header>Anatomy of an HTML Document</header>
+      <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual 
+        elements combine to form an entire HTML page.
+      </p>
+
+      <ol>
+        <li>The <strong>doctype</strong> is the shortest string of characters that counts as a valid doctype.</li>
+        <li>The <strong>html</strong> element wraps all the content on the page. It is sometimes known as the root element.</li>
+        <li>The <strong>head</strong> element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. </li>
+        <li>The <strong>meta</strong> element This element represents metadata that cannot be represented by other HTML meta-related elements.</li>
+        <li>The <strong>title</strong> element sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li>
+        <li>The <strong>body</strong> element contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</li>
+      </ol>
+    </section>
+
+    <section class='main-section' id='Entity_References'>
+      <header>Entity References</header>
+      <p>In HTML, the characters &lt;, &gt;, &quot;, &apos; and &amp; are special characters. They 
+        are parts of the HTML syntax itself. To use special codes, a character reference is used. 
+        Each character reference starts with an ampersand (&), and ends with a semicolon (;).
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Literal character</td>
+            <td>Character reference equivalent</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;</td>
+            <td><code>&amp;lt;</code></td>
+          </tr>
+          <tr>
+            <td>&gt;</td>
+            <td><code>&amp;gt;</code></td>
+          </tr>
+          <tr>
+            <td>&quot;</td>
+            <td><code>&amp;quot;</code></td>
+          </tr>
+          <tr>
+            <td>&apos;</td>
+            <td><code>&amp;apos;</code></td>
+          </tr>
+          <tr>
+            <td>&amp;</td>
+            <td>&amp;amp;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>To find out more about entity reference, see 
+        <a href='https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references'>
+          List of XML and HTML character entity references
+        </a>  (Wikipedia).
+      </p>
+    </section>
+
+    <section class='main-section' id='HTML_Comments'>
+      <header>HTML Comments</header>
+      <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively 
+        making comments invisible to the user. The purpose of comments is to allow you to include 
+        notes in the code to explain your logic or coding.
+      </p>
+
+      <p>To write an HTML comment, wrap it in the special markers <code>&lt;&excl;--</code> and <code>--&gt;.</code></p>
+
+      <span><code>&lt;&excl;-- Comment goes here --&gt;</code></span>
+    </section>
+
+    <section class='main-section' id='Reference'>
+      <header>Reference</header>
+      <p>At this point, you should understand what HTML looks like, and how it works at a basic level. 
+        You should also be able to write a few elements and attributes. 
+      </p>
+      <p>All of the information from this page is taken from 
+        <a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started'>MDN</a>
+      </p>
+    </section>
+    
+  </main>
+</body>
+</html>
